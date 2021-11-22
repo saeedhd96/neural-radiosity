@@ -1,1 +1,1 @@
-# neural-radiosity
+# Neural-Radiosity
