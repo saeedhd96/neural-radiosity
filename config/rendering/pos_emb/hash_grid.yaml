@@ -1,0 +1,6 @@
+otype: HashGrid
+n_levels: 12
+n_features_per_level: 8
+log2_hashmap_size: 18
+base_resolution: 2
+per_level_scale: 2

@@ -1,0 +1,5 @@
+otype: DenseGrid
+base_resolution: 2
+step_resolution: 2
+resolution: 64
+feature_len: 16

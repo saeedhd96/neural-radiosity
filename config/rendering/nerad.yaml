@@ -1,0 +1,19 @@
+defaults:
+  - nerad_base
+  - pos_emb: hash_grid
+  - dir_emb: identity
+  - _self_
+
+post_init:
+  function: radiance_net
+  kwargs:
+    width: 512
+    hidden: 4
+    scene_properties_input: true
+    position_embedding: ${rendering.pos_emb}
+    direction_embedding: ${rendering.dir_emb}
+    # automatically set
+    scene_min:
+    scene_max:
+  # auto set
+  residual_function:
