@@ -1,5 +1,5 @@
 DATA=data
-OUT=output/nerad_only
+OUT=output/nerad
 
 python watchdog.py --max_retries 120 --  \
     out_root=$OUT \
