@@ -48,7 +48,7 @@ def main(cfg: TestConfig = None):
             integrator_injection["residual_function"] = residual_loss_function
         integrator_function_injection = {"device": device}
 
-        integrator = create_integrator(rendering, scene, cfg.dataset, post_init_injection=integrator_injection,
+        integrator = create_integrator(rendering, scene, cfg.dataset.scene, post_init_injection=integrator_injection,
                                        kwargs_injection=integrator_function_injection)
 
         test_integrators[key] = integrator
